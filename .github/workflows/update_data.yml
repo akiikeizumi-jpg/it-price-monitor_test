@@ -2,7 +2,7 @@ name: Update Market Data
 
 on:
   schedule:
-    - cron: '0 21 * * *'
+    - cron: '0 0 * * *'
 
   workflow_dispatch:
 
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.14.6'
 
       - name: Install Packages
         run: |
